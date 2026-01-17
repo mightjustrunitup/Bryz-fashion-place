@@ -32,9 +32,9 @@ const Navbar = () => {
                     {/* Desktop Links */}
                     <div className="nav-links">
                         <a href="/" className="nav-link">HOME</a>
-                        <a href="/new-in" className="nav-link">NEW IN</a>
-                        <a href="/shop-all" className="nav-link">SHOP ALL</a>
-                        <a href="/sale" className="nav-link">SALE</a>
+                        <a href="/men" className="nav-link">MEN</a>
+                        <a href="/women" className="nav-link">WOMEN</a>
+                        <a href="/accessories" className="nav-link">ACCESSORIES</a>
 
                     </div>
 
@@ -65,9 +65,9 @@ const Navbar = () => {
                 <div className={`mobile-menu ${mobileMenuOpen ? 'open' : ''}`}>
                     <div className="mobile-menu-links">
                         <a href="/" onClick={() => setMobileMenuOpen(false)}>HOME</a>
-                        <a href="/new-in" onClick={() => setMobileMenuOpen(false)}>NEW IN</a>
-                        <a href="/shop-all" onClick={() => setMobileMenuOpen(false)}>SHOP ALL</a>
-                        <a href="/sale" style={{ color: 'var(--accent-maroon)' }} onClick={() => setMobileMenuOpen(false)}>SALE</a>
+                        <a href="/men" onClick={() => setMobileMenuOpen(false)}>MEN</a>
+                        <a href="/women" onClick={() => setMobileMenuOpen(false)}>WOMEN</a>
+                        <a href="/accessories" onClick={() => setMobileMenuOpen(false)}>ACCESSORIES</a>
                     </div>
                 </div>
 
