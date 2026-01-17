@@ -1,0 +1,113 @@
+.footer {
+    background: white;
+    /* Changed from dark to white */
+    padding: 6rem 0 4rem;
+    margin-top: auto;
+    color: #000;
+    border-top: none;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.footer-links-section {
+    display: flex;
+    gap: 6rem;
+}
+
+.link-group h4 {
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.link-group a {
+    display: block;
+    font-size: 0.8rem;
+    color: #000;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+}
+
+.link-group a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-section h4 {
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform var(--transition-fast);
+}
+
+.social-icons a:hover {
+    transform: translateY(-2px);
+}
+
+.footer-bottom-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.payment-notice {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.currency-selector {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.customs-notice {
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer-links-section {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

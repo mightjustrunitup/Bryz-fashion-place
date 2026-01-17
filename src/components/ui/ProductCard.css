@@ -1,0 +1,64 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center everything */
+    text-align: center;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+.product-image-container {
+    width: 100%;
+    padding-bottom: 150%;
+    /* Taller aspect ratio (2:3) for dresses */
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* Removed border radius for sharp fashion look */
+}
+
+.product-info {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.product-name {
+    font-family: var(--font-sans);
+    /* Rendoll uses sans for product names */
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.price-gbp,
+.price-usd {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #444;
+}
+
+.price-separator {
+    color: #ccc;
+    font-weight: 300;
+}
